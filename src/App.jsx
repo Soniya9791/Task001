@@ -7,7 +7,7 @@ import Home from "./Home";
 import Services from "./Services";
 import About from "./About";
 import Contact from "./Contact";
-import { BrowserRouter,Route,Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
@@ -19,14 +19,14 @@ const App = () => {
       <Contact/>
       <Footer/> */}
       <BrowserRouter>
-      <Header/>
+        <Header />
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
